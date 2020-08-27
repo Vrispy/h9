@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>H9</title>
+    <style>
+      .calcbody {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 700px;
+        height: 600px;
+        padding: 5px;
+        border-radius: 3px solid black;
+      }
+      input {
+        text-align: right;
+        height: 150px;
+        width: 500px;
+        background-color: white;
+        border: 5px;
+        border: none;
+        margin-bottom: 5px;
+      }
+      .row {
+        background-color: rgb(218, 218, 224);
+        height: 225px;
+        display: flex;
+        width: 200px;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .operations {
+        background-color: rgb(218, 218, 224);
+        height: 225px;
+        display: flex;
+        width: 200px;
+        border-radius: 5px solid rgb(94, 93, 93);
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+        left: 200px;
+        top: -225px;
+      }
+      .add_menu {
+        background-color: rgb(41, 41, 158);
+        height: 225px;
+        display: flex;
+        width: 300px;
+        justify-content: space-between;
+        align-items: center;
+
+        position: relative;
+        left: 400px;
+        top: -450px;
+      }
+      @media (max-width: 442px) {
+        .add_menu {
+          width: 100px;
+        }
+      }
+      button {
+        width: 45px;
+        height: 45px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: none;
+      }
+      button:active {
+        background-color: gainsboro;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="calcbody">
+      <div class="input">
+        <input type="number" />
+      </div>
+      <div class="row">
+        <button value="7"></button>
+        <button value="8"></button>
+        <button value="9"></button>
+      </div>
+      <div class="row">
+        <button value="4"></button>
+        <button value="5"></button>
+        <button value="6"></button>
+      </div>
+      <div class="row">
+        <button value="1"></button>
+        <button value="2"></button>
+        <button value="3"></button>
+      </div>
+      <div class="row">
+        <button value="0"></button>
+        <button value="."></button>
+        <button value=""></button>
+      </div>
+      <div class="operations">
+        <div class="firstrow_ops">
+          <button value="/"></button>
+          <button value="del"></button>
+        </div>
+        <div class="secondrow_ops">
+          <button value="*"></button>
+          <button value=""></button>
+        </div>
+        <div class="thirdrow_ops">
+          <button value="-"></button>
+          <button value=""></button>
+        </div>
+        <div class="fouthrow_ops">
+          <button value="+"></button>
+          <button value="="></button>
+        </div>
+      </div>
+      <div class="add_menu">
+        <div class="addrow1">
+          <button value="inv"></button>
+          <button value="deg"></button>
+          <button value="%"></button>
+        </div>
+        <div class="addrow2">
+          <button value="sin"></button>
+          <button value="cos"></button>
+          <button value="tan"></button>
+        </div>
+        <div class="addrow3">
+          <button value="in"></button>
+          <button value="Log"></button>
+          <button value="cor"></button>
+        </div>
+        <div class="addrow4">
+          <button value="P"></button>
+          <button value="e"></button>
+          <button value="^"></button>
+        </div>
+        <div class="addrow5">
+          <button value="("></button>
+          <button value=")"></button>
+          <button value="!"></button>
+        </div>
+      </div>
+    </div>
+    <script></script>
+    <script></script>
+    <script src="src/index.js"></script>
+  </body>
+</html>
